@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Inter;
+    background-color: hsl(233, 47%, 7%);
+    color: #fff;
+    font-size: 15px;
+    
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 100px;
+}
+
+ul li {
+    float: left;
+    list-style: none;
+    padding-right: 30px;
+    padding-top: 10px;
+}
+
+ul li p {
+    text-transform: uppercase;
+    opacity: .5;
+    font-size: 10px;
+}
+
+
+.image {
+
+    background: linear-gradient(hsla(277, 64%, 61%, 0.8), hsla(244, 30%, 30%, 0.8)), url('../images/image-header-desktop.jpg');
+    width: 100%;
+    height: 400px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+
+.showcase {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    background-color: hsl(244, 38%, 16%);
+    width: 1000px;
+    flex-direction: row-reverse;
+    
+}
+
+.card-content {
+    padding: 60px;
+    width: 90%;
+}
+
+.title {
+    font-size: 1.5rem;
+}
+
+.highlight {
+    color: hsl(277, 64%, 61%);
+}
+
+.description {
+    margin-top: 30px;
+    text-align: left;
+    margin-bottom: 30px;
+    opacity: .5;
+}
+
+
+.attribution {
+margin-top: 50px;
+}
+
+@media(max-width:1024px) {
+
+    ul li{
+        float: none;
+        text-align: center;
+        padding: 10px;
+    }
+
+    .showcase {
+        flex-direction: column;
+        margin: 10px 30px;
+        
+    }
+
+    .image {
+        background: linear-gradient(hsla(277, 64%, 61%, 0.8), hsla(244, 30%, 30%, 0.8)), url('../images/image-header-mobile.jpg');
+        border-top-left-radius: 5px;
+        border-bottom-right-radius: 0px;
+        
+    }
+
+    .title {
+        text-align: center;
+        padding: 20px;
+    }
+
+    .description {
+        text-align: center;
+        line-height: 20px;
+    }
+
+}
+
+
+
+
+
